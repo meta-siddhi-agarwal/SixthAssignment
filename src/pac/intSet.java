@@ -190,12 +190,8 @@ final public class intSet {
 	 * @return size of the set
 	 */
 	static public int sizeOfSet() {
-		int sizeOfIntSet=0;
-		for(int intSetIndex=0;intSetIndex<intSetObject.set.length;intSetIndex++) {
-			
-			if(intSetObject.set[intSetIndex]!=Integer.MAX_VALUE)sizeOfIntSet++;
-		}
-		return sizeOfIntSet;
+		return intSetObject.set.length;
+
 	}
 	/**
 	 * 
