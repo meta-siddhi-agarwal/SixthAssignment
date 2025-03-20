@@ -24,7 +24,7 @@ final public class intSet {
 	private intSet() {
 		
 	}
-    //for initialing set
+    //for initializing set
 	private static intSet  intSetObject=new intSet();
 	
 	//for taking input from user
@@ -177,15 +177,12 @@ final public class intSet {
 	 * @return whether element is a member of the set
 	 */
 	static public boolean isMember(int x) {
-
-
 		for(int intSetObjectIndex=0;intSetObjectIndex<intSetObject.set.length;intSetObjectIndex++) {
 			if(intSetObject.set[intSetObjectIndex]==x)return true;
 		}
 		return false;
 		
-//		if(intSetObject.set.length>=x && intSetObject.set[x-1]!=0)return true;
-//		else return false;
+
 	}
 	
 	/**
