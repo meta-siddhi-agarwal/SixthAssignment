@@ -12,12 +12,12 @@ final public class intSet {
 	private int set[];
 	
 	//private constructor for initializing set
-	private  intSet(List<Integer> listOfNumber, intSet intSetLis) {
-		intSetLis.set=new int[listOfNumber.size()];
+	private  intSet(List<Integer> listOfNumber, intSet intSetListObject) {
+		intSetListObject.set=new int[listOfNumber.size()];
 //		intSetLis.set=new int[listOfNumber.size()];=
-		Arrays.fill(intSetLis.set, Integer.MAX_VALUE);
+		Arrays.fill(intSetListObject.set, Integer.MAX_VALUE);
 		for(int listIndex=0;listIndex<listOfNumber.size();listIndex++) {
-			intSetLis.set[listIndex]=listOfNumber.get(listIndex);	
+			intSetListObject.set[listIndex]=listOfNumber.get(listIndex);	
 		}
 	}
 	
